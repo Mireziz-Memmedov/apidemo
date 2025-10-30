@@ -18,6 +18,6 @@ def get_news():
         return jsonify({"error": "Invalid query parametrs"})
 
     if api_key and api_key !=API_KEY:
-        return jsonify({"error ": "Invalid api key"})
+        return jsonify({"error": "Invalid api key"})
         
     return jsonify({"news": news})     
