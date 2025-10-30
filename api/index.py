@@ -4,7 +4,7 @@ from .config import API_KEY
 
 app = Flask(__name__)
 CORS(app, resources = {r"/api/news": {
-    "origns": ["https://mireziz-memmedov.github.io"],
+    "origns": [],
     "methods": ["GET"]
 }})
 
