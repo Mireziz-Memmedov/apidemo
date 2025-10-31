@@ -3,6 +3,7 @@ from flask_cors import CORS
 from .config import API_KEY
 
 app = Flask(__name__)
+
 CORS(app, resources = {r"/api/news": {
     "origins": ["https://mireziz-memmedov.github.io"],
     "methods": ["GET"]
@@ -10,6 +11,7 @@ CORS(app, resources = {r"/api/news": {
 
 @app.route("/api/news", methods=["GET"])
 def get_news():
+
     api_key = request.args.get("api_key")
 
     news = {"id": 1, "title": "Demo"}
